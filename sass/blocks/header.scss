@@ -1,0 +1,98 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  &__logo {
+    width: 165px;
+    transition: .2s linear;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  &__navigation {
+    margin-left: 20px;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list-item {
+    margin-right: 18px;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+  &__link {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s linear;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  &__contacts {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  &__number {
+    font-size: 24px;
+    line-height: 1.2;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s linear;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  &__call-link {
+    font-size: 10px;
+    line-height: 1.4;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s linear;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  &__divider {
+    width: 103px;
+    height: 1px;
+    background-color: $main-color;
+  }
+  &__location {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 30px 70px;
+  }
+  &__location-icon {
+    width: 23px;
+  }
+  &__into-text {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.2;
+    color: $main-color;
+    text-transform: uppercase;
+    /* background: url('../../images/icons/polygon.svg' bottom right/contain 8px 8px no-repeat); */
+    /* cursor: pointer; */
+  }
+  &__city {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+}
