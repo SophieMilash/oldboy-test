@@ -20,7 +20,7 @@
   -moz-text-size-adjust: 100%;
   &::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -39,5 +39,57 @@
   }
   &__main-form {
     margin-bottom: 78px;
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  .page__content {
+    margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page {
+    &__header{
+      margin: 52px 35px 0 40px;
+    }
+    &__content {
+      margin: 0 35px 0 40px;
+    }
+    &__main-form {
+      margin-bottom: 129px;
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .page {
+    &__header{
+      margin: 40px 20px 0;
+    }
+    &__content {
+      margin: 0 20px;
+    }
+    &__main-form {
+      margin-bottom: 60px;
+    }
+    &__lead {
+      margin-top: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .page {
+    padding-bottom: 95px;
+    &__header{
+      margin-top: 25px;
+    }
+    &__lead {
+      margin-top: 35px;
+    }
+    &__main-form {
+      margin: 45px auto 0;
+    }
   }
 }

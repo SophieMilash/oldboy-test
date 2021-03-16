@@ -36,3 +36,9 @@
     margin: 30px auto 0;
   }
 }
+
+@media screen and (max-width: 950px) {
+  .franchisees {
+    display: none;
+  }
+}

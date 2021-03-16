@@ -2,5 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* overflow: hidden; */
+  overflow: hidden;
+}
+
+@media screen and (max-width: 575px) {
+  .content {
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: start; */
+  }
 }
