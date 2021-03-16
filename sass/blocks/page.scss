@@ -2,6 +2,7 @@
   font-family: 'Rex', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
+  text-transform: uppercase;
   color: #fff;
   margin: 0 auto;
   padding: 0;
@@ -10,6 +11,13 @@
   min-height: 600px;
   box-sizing: border-box;
   background: url('../../images/main-bg.jpg') center center/cover no-repeat #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
   &::before {
     content: '';
     position: absolute;
@@ -21,6 +29,15 @@
     z-index: -1;
   }
   &__header {
-    margin: 60px 65px 52px 0;
+    margin: 60px 65px 0 52px;
+  }
+  &__content {
+    margin: 0 160px 0 52px;
+  }
+  &__lead {
+    margin-top: 20px;
+  }
+  &__main-form {
+    margin-bottom: 78px;
   }
 }

@@ -1,0 +1,70 @@
+.lead {
+  max-width: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  transform: matrix(1, -0.24, 0, 0.97, 0, 0);
+  position: relative;
+  &__title {
+    margin: 0;
+    font-size: 41px;
+    line-height: .9;
+  }
+  &__title-accent {
+    font-size: 61px;
+  }
+  &__line {
+    width: 130px;
+    height: 4px;
+    background-color: $main-color;
+    position: absolute;
+    top: 14px;
+    right: 70px;
+  }
+  &__subtitle {
+    max-width: 245px;
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 24px;
+    line-height: 1.1;
+    color: $main-color;
+    border-bottom: 4px solid $main-color;
+  }
+  &__subtitle-accent {
+    line-height: 1.2;
+    color: #fff;
+  }
+  &__text {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 160px 25px;
+  }
+  &__paragraph {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.1;
+    color: $main-color;
+  }
+  &__paragraph-accent {
+    color: #fff;
+  }
+  &__plus {
+    justify-self: start;
+    align-self: center;
+    background-color: #fff;
+    height: 17px;
+    width: 5px;
+    left: 6px;
+    position: relative;
+    &::after {
+      content: '';
+      height: 5px;
+      width: 17px;
+      background-color: #fff;
+      position: absolute;
+      top: 6px;
+      left: -6px;
+    }
+  }
+}

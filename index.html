@@ -38,16 +38,64 @@
       </ul>
     </nav>
     <div class="header__contacts">
-      <a href="tel:+78002345973" target="_blank" class="header__number">8 800 2345973</a>
+      <a href="tel:+78002345973" target="_blank" class="header__number">8&nbsp;800&nbsp;2345973</a>
       <a href="#" target="_self" class="header__call-link">заказать обратный звонок</a>
       <div class="header__divider"></div>
     </div>
     <div class="header__location">
       <img src="./images/icons/tag.svg" alt="Метка" class="header__location-icon">
-      <p class="header__into-text">Выбери свой барбершоп:</p>
+      <p class="header__location-text">Выбери свой барбершоп:</p>
       <p class="header__city">Москва</p>
     </div>
   </header>
 
+  <main class="content page__content">
+    <section class="lead page__lead">
+      <h1 class="lead__title">Стань владельцем
+        <span class="lead__title-accent">барбершопа</span>
+      </h1>
+      <div class="lead__line"></div>
+      <p class="lead__subtitle">Крупнейшей в мире сети
+        <span class="lead__subtitle-accent">oldboy barbershop</span>
+      </p>
+      <div class="lead__text">
+        <p class="lead__paragraph">Зарабатывай
+          <span class="lead__paragraph-accent">250&nbsp;000 рублей</span>
+        в месяц</p>
+        <div class="lead__plus"></div>
+      </div>
+    </section>
+
+    <section class="franchisees">
+      <div class="franchisees__content">
+        <h2 class="franchisees__title">
+          <span class="franchisees__title-accent">100%</span>
+          поддержка франчайзи</h2>
+        <p class="franchisees__subtitle">закрываем все вопросы "под ключ"</p>
+      </div>
+      <img src="./images/logo.svg" alt="Логотип OldBoy" class="franchisees__logo">
+    </section>
+
+    <section class="main-form page__main-form">
+      <form class="form" name="contact-form">
+        <fieldset class="form__contact-info">
+          <legend class="form__title">заполни форму</legend>
+          <p class="form__subtitle">и мы вышлем фин. модель на твою почту</p>
+          <input type="text" name="name" placeholder="имя" required class="form__item form__item_type_name">
+          <input type="tel" name="tel" placeholder="телефон" required class="form__item form__item_type_tel" pattern="[0-9]+">
+          <input type="email" name="email" placeholder="e-mail" required class="form__item form__item_type_email">
+          <div class="form__label-wrap">
+            <input id="privacy-policy" type="checkbox" name="privacy" value="yes" required class="form__invisible-checkbox">
+            <label for="privacy-policy" class="form__label">
+              я соглашаюсь с
+              <span class="form__label-accent">политикой&nbsp;конфиденциальности</span>
+            </label>
+          </div>
+          <button type="submit" name="submit" class="form__button">получить презентацию</button>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
 </body>
 </html>
